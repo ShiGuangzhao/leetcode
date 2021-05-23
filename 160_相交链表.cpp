@@ -72,6 +72,7 @@ public:
         while(pA != pB) {
             if(pA == nullptr)   pA = headB;
             if(pB == nullptr)   pB = headA;
+            if(pA == pB)        return pA;
             pA = pA->next;
             pB = pB->next;
         }
